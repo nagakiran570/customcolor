@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .color-btn{
+            margin-top: 50px;
+            display: flex;
+            gap: 50px;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+
+        div button{
+            height: 50px;
+            width: 100px;
+            border-radius: 20px;
+            font-size: medium;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+   <center> <div style="height: 300px;width: 300px;background-color: antiquewhite;border: 10px double;"></div>  </center>
+
+   <div class="color-btn">  
+        <button  class="red" style="background-color: red;">  red  </button> 
+        <button  class="pink" style="background-color:rgb(234, 9, 84);">  pink </button>  
+        <button  class="blue" style="background-color: blue;">  blue </button>  
+        <button  class="green" style="background-color: green;" >  green</button> 
+        <button  class="violet" style="background-color: violet;">  violet</button>
+    </div> 
+
+
+   <script>
+    const box=document.querySelector('div')
+    const red=document.querySelector('.red')
+    const blue=document.querySelector('.blue')
+    const green=document.querySelector('.green')
+    const violet=document.querySelector('.violet')
+    const pink=document.querySelector('.pink')
+    
+
+    red.addEventListener('click',function(){
+        box.style.backgroundColor='red'
+    })
+    blue.addEventListener('click',function(){
+        box.style.backgroundColor='blue'
+    })
+    pink.addEventListener('click',function(){
+        box.style.backgroundColor='rgb(234, 9, 84)'
+    })
+    violet.addEventListener('click',function(){
+        box.style.backgroundColor='violet'
+    })
+    green.addEventListener('click',function(){
+        box.style.backgroundColor='green'})
+   </script>
+
+</body>
+</html>
